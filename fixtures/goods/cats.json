@@ -1,0 +1,37 @@
+[
+  {
+    "model": "goods.categories",
+    "pk": 1,
+    "fields": { "name": "��� ��������", "slug": "vse-produkty" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 2,
+    "fields": { "name": "����", "slug": "okna" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 3,
+    "fields": { "name": "�����", "slug": "dveri" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 4,
+    "fields": { "name": "�������� ������", "slug": "naruzhnye-zhalyuzi" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 5,
+    "fields": { "name": "��������� �������", "slug": "terrasnye-sistemy" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 6,
+    "fields": { "name": "����� ���", "slug": "umnyj-dom" }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 7,
+    "fields": { "name": "�������", "slug": "pergola" }
+  }
+]
