@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %} 
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+
+{% block content %}
+    <container>
+        <h2 class="mt-5 text-white"><strong>{{ content }}</strong></h2>
+        <p class="m-1 text-white">{{ text_on_page }}</p>
+    </container>
+{% endblock content %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; JK & Co Web Studio 2024</p>
+        </div>
+    </footer>
+{% endblock footer %}

@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %} 
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock css %}
+
+{% block content %}
+    <div  class="about-1">
+        <h2 class="mt-5 text-white"><strong>{{ content }}</strong></h2>
+        <p class="m-2 text-white">{{ text_on_page }}</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.3026992408886!2d24.127853696272485!3d56.96074723012985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfcac3ce638b%3A0x72f4cc0eeaf73399!2zQnLEq3bEq2JhcyBpZWxhIDEwMCwgQ2VudHJhIHJham9ucywgUsSrZ2EsIExWLTEwMDE!5e0!3m2!1sru!2slv!4v1721743568650!5m2!1sru!2slv" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; JK & Co Web Studio 2024</p>
+        </div>
+    </footer>
+{% endblock footer %}

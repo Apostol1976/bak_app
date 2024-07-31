@@ -1,0 +1,68 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %} 
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+    <link rel="stylesheet" href="{% static "deps/css/bootstrap/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "deps/css/my_css.css" %}">
+{% endblock css %}
+
+{% block content %}
+    <container>
+        <form class="form-contact contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
+            {% csrf_token %}
+            {% if success %}
+            <div class="alert alert-danger">
+                <strong class="text-white">Спасибо за сообщение!</strong>
+            </div>
+            {% endif %}
+
+            <div class="row">
+                <div class="col-12">
+                   
+                    <div class="form-group">
+                        {{ form.message }}
+                    </div>
+                    {% if form.message.errors %}
+                    <div class="alert alert-danger">
+                        <strong class="text-white">{{ form.message.errors }}</strong>
+                    </div>
+                {% endif %}
+             </div>   
+           
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        {{ form.name }}
+                    </div>
+                    {% if form.name.errors %}
+                    <div class="alert alert-danger">
+                        <strong class="text-white">{{ form.name.errors }}</strong>
+                    </div>
+                {% endif %}
+                </div>  
+            
+                <div class="col-sm-6">
+               
+                    <div class="form-group">
+                        <div class="email">{{ form.email }}</div>
+                    </div>
+                    {% if form.email.errors %}
+                    <div class="alert alert-danger">
+                        <strong class="text-white">{{ form.email.errors }}</strong>
+                    </div>
+                {% endif %}
+                </div> 
+                <div class="form-group mp-3">
+                    <button type="submit" class="button button-contactForm boxed-btn bg-primary">Отправить</button>
+                </div>
+            </form>  
+    </container>
+{% endblock content %}
+
+{% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; JK & Co Web Studio 2024</p>
+        </div>
+    </footer>
+{% endblock footer %}
