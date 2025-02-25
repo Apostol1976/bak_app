@@ -4,19 +4,11 @@
 
 {% block content %}
 
-    
-     
-   
+          
     
     {% for product in goods %}
 
-
-   
-
-
-
-
-     
+      
 
             <div class="ror">
                  <a class="dropdown-item" href="{% url "catalog:product" product.slug %}">
@@ -27,9 +19,6 @@
       
     {% endfor %}
     
-
-
-
 
 
 {% endblock content %}

@@ -44,3 +44,13 @@ container {
 .email{
   background: green;
 }
+
+.carousel-item{
+  height: 100px;
+}
+
+.carousel-item-img{
+  height: 100px;
+}
+
+

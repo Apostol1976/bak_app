@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block css %} 
+    <link rel="stylesheet" href="{% static "deps/css/bootstrap/bootstrap.min.css" %}">      
     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
-    <link rel="stylesheet" href="{% static "deps/css/bootstrap/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "deps/css/my_css.css" %}">
 {% endblock css %}
 
@@ -66,3 +66,7 @@
         </div>
     </footer>
 {% endblock footer %}
+<script src="{% static "deps/jquery/jquery-3.7.0.min.js"%}"></script>
+    <script src="{% static "deps/jquery-events.js"%}"></script>
+    <script src="{% static "deps/jquery-ajax.js"%}"></script>
+    <script src="{% static "deps/js/bootstrap.bundle.min.js"%}"></script>
