@@ -11,4 +11,7 @@ urlpatterns = [
     path('contakt/', views.contakt, name='contakt'),
     path('why/', views.why, name='why'),
     path('message/', views.message, name='message'),
+    path('montaz/', views.montaz, name='montaz'),
+    path('umdom/', views.umdom, name='umdom'),
+    path('remont/', views.remont, name='remont'),
 ]

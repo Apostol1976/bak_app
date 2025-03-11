@@ -32,6 +32,30 @@ def contakt(request):
          }
     return render(request, 'main/contakt.html', context)
 
+def montaz(request):
+    context={
+        'title': 'Home - Контактная информация',
+        'content': 'Контактная информация',
+         'text_on_page': 'Адрес: Латвия, г. Рига, ул. Бривибас, д. 100, офис 20'
+         }
+    return render(request, 'main/montaz.html', context)
+
+def umdom(request):
+    context={
+        'title': 'Home - Контактная информация',
+        'content': 'Контактная информация',
+         'text_on_page': 'Адрес: Латвия, г. Рига, ул. Бривибас, д. 100, офис 20'
+         }
+    return render(request, 'main/umdom.html', context)
+
+def remont(request):
+    context={
+        'title': 'Home - Контактная информация',
+        'content': 'Контактная информация',
+         'text_on_page': 'Адрес: Латвия, г. Рига, ул. Бривибас, д. 100, офис 20'
+         }
+    return render(request, 'main/remont.html', context)
+
 def why(request):
     context={
         'title': 'Home - Почему мы',
