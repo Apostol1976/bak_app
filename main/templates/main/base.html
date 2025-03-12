@@ -133,7 +133,22 @@
             </div>
         </div>
     </section>
-    {% block footer %}{% endblock footer %}
+    {% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="foot">
+          
+              
+            <div class="text-light">
+            
+                <p> Copyright JK & Co Web Studio 2024 </p>
+            
+            </div>
+            <div>
+              <p><a class="text-light" href="">Политика конфиденциальности</a></p>
+            </div>
+          </div>
+    </footer>
+    {% endblock footer %}
     <script src="{% static "deps/jquery/jquery-3.7.0.min.js"%}"></script>
     <script src="{% static "deps/jquery/jquery-events.js"%}"></script>
     <script src="{% static "deps/jquery/jquery-ajax.js"%}"></script>
